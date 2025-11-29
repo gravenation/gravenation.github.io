@@ -1,0 +1,19 @@
+{
+  "name": "grave-nation",
+  "private": true,
+  "version": "6.6.6",
+  "description": "Project Site of the LGPT-Group.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gravenation/gravenation.github.io.git"
+  },
+  "author": "Grave Nation",
+  "license": "MIT",
+  "homepage": "https://gravenation.github.io/",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}
