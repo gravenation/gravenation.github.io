@@ -1,0 +1,143 @@
+# Welcome to GraveNation!!
+
+title: "LGPT-Group | GRAVE-NATION"
+title_separator: "|"
+name: "Luxnation"
+email: "admin@thesmos.asia"
+description: "Project Site of LGPT-Group."
+locale: "en-GB"
+url: "https://www.thesmos.asia"
+# baseurl:
+timezone: Europe/London
+repository: "gravenation/gravenation.github.io"
+twitter_username: "prothesmos"
+github_username:  "gravenation"
+theme: "minimal-mistakes-jekyll"
+minimal_mistakes_skin: "mint"
+logo: "/assets/images/logo.png"
+og_image: "/assets/images/og-animate.png"
+date_format: "%Y-%m-%d"
+words_per_minute: 250
+enable_copy_code_button: true
+bing_site_verification: "93c2d1e9a08bb53043ff9e1fd068f2b1"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache
+
+pagination:
+  extension: html
+  indexpage: "index"
+  enabled: true
+  collection: 'posts'
+  per_page: 5
+  permalink: '/page/:num/'  # Pages are index.html inside this folder (default)
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+
+social:
+  type: "Organization"
+  name: "Grave-Nation"
+  links:
+    - "https://github.com/gravenation"
+    - "https://mstdn.plus/@drthesmos"
+    - "https://medium.com/@drthesmos"
+
+author:
+  name: "LuxNation"
+  avatar: "/assets/images/avatar.webp"
+  bio: "We are the awesome grave-nations."
+  location: "London, UK"
+  links:
+    - label: "Grave Nation"
+      icon: "fas fa-fw fa-link"
+      url: "https://thesmos.asia"
+
+atom_feed:
+  hide: true
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+      read_time: true
+      show_date: true
+      share: true
+      related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+  # archives
+  - scope:
+      path: ""
+      type: tag
+    values:
+      author_profile: true
+  - scope:
+      path: ""
+      type: category
+    values:
+      comments: false
+
+footer:
+  since: "2020"
+  links:
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://social.vivaldi.net/@drthesmos"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/drthesmos"
+    - label: "Blog"
+      icon: "fab fa-fw fa-link"
+      url: "https://hashnode.com/drthesmos"
+
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
