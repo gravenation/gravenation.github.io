@@ -15,5 +15,8 @@
   },
   "devDependencies": {
     "uglify-js": "^3.17.4"
+  },
+  "scripts": {
+    "uglify": "uglifyjs [...] -c -m -o assets/js/main.min.js"
   }
 }
