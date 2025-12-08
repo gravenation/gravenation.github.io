@@ -4,7 +4,7 @@ on:
   push:
     branches:
          - main
-  pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: deploy
   cancel-in-progress: true
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
         with:
-          ruby-version: '3.1'
+          ruby-version: '3.2'
           bundler-cache: true
           cache-version: 0
       - name: Setup Pages
@@ -50,7 +50,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-         github-token: ${{ env.secrets.GITHUB_TOKEN }}
+         github-token: ${{ secrets.GITHUB_TOKEN }}
          publish_branch: gh-pages
          publish_dir: ./_site
          cname: thesmos.asia
