@@ -1,13 +1,11 @@
-# Welcome to GraveNation!!
-
-title: "LGPT-Group | GRAVE-NATION"
+title: "AweLGH-Nations | GRAVE-NATION"
 title_separator: "|"
-name: "Luxnation"
+name: "Grave-Nation"
 email: "admin@thesmos.asia"
-description: "Project Site of LGPT-Group."
+description: "Project Site of AweLGH-Nations."
 locale: "en-GB"
-url: "https://www.thesmos.asia"
-# baseurl:
+url: "https://thesmos.asia"
+baseurl: ""
 timezone: Europe/London
 repository: "gravenation/gravenation.github.io"
 twitter_username: "prothesmos"
